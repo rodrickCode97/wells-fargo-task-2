@@ -47,17 +47,14 @@ public class Client {
         return id;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
 
-    public String getLastName() {
-        return lastName;
-    }
-    public String getAddress() {
-        return address;
-    }
-    public String getPhone() {return  phone;}
+    public String getLastName() { return lastName; }
+
+    public String getAddress() { return address; }
+
+    public String getPhone() { return phone; }
+    
 
 }
 
