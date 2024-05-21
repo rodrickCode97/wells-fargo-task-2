@@ -7,7 +7,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
+@Table(name="advisor")
 public class Advisor {
+    
+
 
     @Id
     @GeneratedValue()
@@ -27,6 +30,9 @@ public class Advisor {
 
     @Column(nullable = false)
     private String email;
+    
+    @OneToMany(mappedBy="advisor")
+    private list<Client> clients;
 
     protected Advisor() {
 
